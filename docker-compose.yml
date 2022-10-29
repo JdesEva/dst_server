@@ -4,8 +4,8 @@ services:
      image: jdeseva/dst_dst-server:${DST_TAG-202221008}
      restart: "on-failure:10"
      ports:
-        - "10999-11000:10999-11000/udp"
-        - "12346-12347:12346-12347/udp"
+        - "11999-12000:10999-11000/udp"
+        - "13346-13347:12346-12347/udp"
      volumes:
         - ./data:/data
         - ./server:/opt/dst_server
