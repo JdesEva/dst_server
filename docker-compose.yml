@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  dst-server:
+     image: jdeseva/dst_dst-server:${DST_TAG-202221008}
+     restart: "on-failure:10"
+     ports:
+        - "10999-11000:10999-11000/udp"
+        - "12346-12347:12346-12347/udp"
+     volumes:
+        - ./data:/data
+        - ./server:/opt/dst_server
+     stop_grace_period: 6m
