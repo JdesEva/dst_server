@@ -13,7 +13,6 @@ return {
     enabled=true 
   },
   ["workshop-1207269058"]={ configuration_options={  }, enabled=true },
-  ["workshop-1699194522"]={ configuration_options={ Skillbadge=true }, enabled=true },
   ["workshop-1392778117"]={
     configuration_options={
       BackCubChance=0.7,
